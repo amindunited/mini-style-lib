@@ -1,0 +1,23 @@
+@import '../../../src/styles/variables/index.scss';
+
+.container {
+  display: flex;
+
+  /* Then we define the flow direction
+     and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+}
+
+colour-swatch {
+  width: 32%;
+  height: calc(100vh / 3);
+  margin: $base_measure;
+  margin-bottom: $base_measure * 2;
+}
